@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style type="text/css">
+/* =====================
+0: Base
+======================*/
+
+/* =====================
+1: Layout 
+==========  ============*/
+
+/*resets */
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  Margin:0;
+}
+
+/*layout */
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#ededed;
+}
+table {
+  border-spacing: 0;
+  font-family: sans-serif;
+  color: #333333;
+}
+td {
+  padding: 0;
+}
+img {
+  border: 0;
+  display:block;
+}
+/* containers*/
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding-top:10px;
+}
+.webkit {
+  max-width: 600px;
+}
+.outer { 
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+.inner {
+  padding: 10px;
+}
+.contents {
+  width: 100%;
+}
+
+/*Two column layout*/
+.two-column {
+  text-align: center;
+  font-size: 0;
+}
+.two-column .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.two-column .contents {
+  font-size: 14px;
+  text-align: left;
+}
+
+/*Three column layout*/
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.three-column .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+  text-align: center;
+  font-size: 0;
+}
+.left-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.left-sidebar .left {
+  max-width: 100px;
+}
+.left-sidebar .right {
+  max-width: 500px;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+  text-align: center;
+  font-size: 0;
+}
+.right-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.right-sidebar .left {
+  max-width: 100px;
+}
+.right-sidebar .right {
+  max-width: 500px;
+}
+
+/* =====================
+2: Module 
+======================*/
+
+/* preheader */
+.preheader {
+  display:none !important;
+}
+
+/* typography */
+
+p {
+  Margin: 0;
+}
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 18px;
+  font-family: 'Arvo', helvetica, sans-serif;
+}
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+a {
+  color: #ee6a56;
+  text-decoration: underline;
+}
+
+/* Header */
+
+.header {
+}
+.header .contents {
+  text-align: center;
+}
+.header p {
+  font-size: 12px;
+  Margin-top: 6px;
+  Margin-bottom: 0px;
+}
+.header .header-anchor {
+  color:#000000;
+  text-decoration:none;
+}
+
+/*footer*/
+
+.footer {
+  width:600px;
+  max-width:100%;
+  Margin:0 auto;
+}
+.footer .contents {
+  text-align: center;
+}
+.footer p {
+  font-size: 10px;
+  Margin-top: 0px;
+  Margin-bottom: 10px;
+}
+.footer .footer-anchor {
+  color:black;
+}
+
+/*one column*/
+
+.one-column img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/*two column */
+
+.two-column img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+.two-column .text {
+  padding-top: 10px;
+}
+
+/*three column*/
+
+.three-column img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+.three-column .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.three-column .text {
+  padding-top: 10px;
+}
+
+/*left sidebar*/
+
+.left-sidebar img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+.left-sidebar .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.left-sidebar a {
+  color: #85ab70;
+}
+
+/*right sidebar*/
+
+.right-sidebar img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+.right-sidebar .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.right-sidebar a {
+  color: #70bbd9;
+}
+
+/* Buttons */
+
+.button {
+  font-size: 24px;
+  font-family: helvetica, sans-serif;
+  color: #ffffff !important;
+  text-decoration: none;
+  background-color: #000000;
+  border-top: 12px solid #000000;
+  border-bottom: 12px solid #000000;
+  width:150px;
+  max-width:100%;
+  display: inline-block;
+  margin:4px auto 0px;
+}
+
+/* =====================
+3: Media Queries
+======================*/
+@media screen and (max-width: 400px) {
+  .two-column .column,
+  .three-column .column {
+    max-width: 100% !important;
+  }
+  .two-column img {
+    max-width: 100% !important;
+  }
+  .three-column img {
+    max-width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+  .three-column .column {
+    max-width: 33% !important;
+  }
+  .two-column .column {
+    max-width: 50% !important;
+  }
+}
+  </style>
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      table {border-collapse: collapse;}
+    </style>
+  <![endif]-->
+
+</head>
+<body>
+  <span class="preheader">
+    Holiday cheer and a happy new year from the Bently Reserve events team!
+  </span>
+
+<!-- *******
+  Inner wrapper openings for centered table
+-->
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!-- end inner wrap opening -->
+
+<!--
+  Single Column image
+-->
+                <tr>
+                      <td class="one-column">
+                        <img src="http://bentlyreserve.com/email/holiday-cheer-2017/top.jpg" width="600" alt="Holiday cheer and a happy new year from the Bently Reserve events team!" />
+                      </td>
+                </tr>
+<!-- End Single Column image -->
+<!--
+  Single Column image
+-->
+                <tr>
+                      <td class="one-column">
+                        <a href="http://bentlyreserve.com"><img src="http://bentlyreserve.com/email/holiday-cheer-2017/middle.png" width="600" alt="The Bently Reserve. 301 Battery Street San Francisco, CA 94111. 415-294-2226. Bentlyreserve.com" /></a>
+                      </td>
+                </tr>
+<!-- End Single Column image -->
+<!--
+  Single Column image
+-->
+                <tr>
+                      <td class="one-column">
+                        <a href="http://www.juliemikos.com"><img src="http://bentlyreserve.com/email/holiday-cheer-2017/bottom.png" width="600" alt="Photograph by Julie Mikos" /></a>
+                      </td>
+                </tr>
+<!-- End Single Column image -->
+<!-- *******
+    Read Online Banner
+-->
+                <tr class="header">
+                    <td class="header-center">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p><a class="header-anchor" href="http://bentlyreserve.com/email/holiday-cheer-2017/"><font color=''>Having trouble reading this? View it online!</font></a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+<!-- end read online banner -->
+
+<!-- *******
+  Begin closing Inner wrapper openings for centered table
+-->
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!-- end inner wrapping closing tags -->
+
+
+<!-- *******
+  Inner wrapper openings for centered table
+-->
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!-- end inner wrap opening -->
+<!-- *******
+  Begin Footer
+-->
+  <table class="footer">
+    <tr>
+      <td>
+        <table width="100%">
+          <tr>
+            <td class="inner contents">
+              <div class="unsubscribe">
+              <unsubscribe>
+                <p class="unsubscribe-text">We&rsquo;d hate to see you go, but you can unsubscribe here.</p>
+              </unsubscribe>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!-- end footer -->
+<!-- *******
+  Begin closing Inner wrapper openings for centered table
+-->
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!-- end inner wrapping closing tags -->
+</body>
+</html>
